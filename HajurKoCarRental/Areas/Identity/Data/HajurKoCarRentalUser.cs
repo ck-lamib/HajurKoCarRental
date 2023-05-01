@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using HajurKoCarRental.Controllers;
 using Microsoft.AspNetCore.Identity;
 
 namespace HajurKoCarRental.Areas.Identity.Data;

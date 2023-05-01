@@ -11,8 +11,6 @@ C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\M
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\MessagePack.Annotations.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.Build.dll
-C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.Build.Framework.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.CodeAnalysis.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -29,7 +27,6 @@ C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\M
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
-C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.NET.StringTools.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -56,7 +53,6 @@ C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\S
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\System.Composition.TypedParts.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\System.Drawing.Common.dll
-C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\System.Security.Permissions.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\System.Windows.Extensions.dll
@@ -216,11 +212,6 @@ C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\r
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
-C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
-C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
-C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\obj\Debug\net6.0\HajurKoCarRental.csproj.AssemblyReference.cache
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\obj\Debug\net6.0\HajurKoCarRental.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\obj\Debug\net6.0\HajurKoCarRental.AssemblyInfoInputs.cache
@@ -251,7 +242,6 @@ C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\M
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
@@ -261,7 +251,6 @@ C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\M
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\System.Runtime.Caching.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -272,3 +261,12 @@ C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\r
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\obj\Debug\net6.0\HajurKoCarRental.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\Microsoft.Build.Locator.dll
+C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\win-arm\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
+C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\khatt\source\repos\HajurKoCarRental\HajurKoCarRental\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll

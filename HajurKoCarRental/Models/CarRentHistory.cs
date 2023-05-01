@@ -9,7 +9,7 @@ namespace HajurKoCarRental.Models
     {
         [Key] public int CarRentHistoryId { get; set; }
 
-        [ForeignKey("Id")] public int CarRentId { get; set; }
+         public int CarRentId { get; set; }
 
         public bool is_fined { get; set; } = false;
         public string? FinedType { get; set; }
@@ -21,6 +21,6 @@ namespace HajurKoCarRental.Models
         public int? RentPrice { get; set; }
 
         //Relationships
-        public virtual HajurKoCarRentalUser HajurKoCarRentalUser { get; set; }
+        //public virtual HajurKoCarRentalUser HajurKoCarRentalUser { get; set; }
     }
 }

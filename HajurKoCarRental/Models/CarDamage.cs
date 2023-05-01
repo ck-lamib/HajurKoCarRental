@@ -10,7 +10,7 @@ namespace HajurKoCarRental.Models
 
         [Key] public int CarDamageId { get; set; }
 
-        [ForeignKey("Id")] public int UserId { get; set; }
+         public int UserId { get; set; }
 
         [Display(Name = "Damage Description")]
         [Required(ErrorMessage = "Damage description must be entered")]
@@ -26,7 +26,7 @@ namespace HajurKoCarRental.Models
 
 
         //Relationships
-        public virtual HajurKoCarRentalUser HajurKoCarRentalUser { get; set; }
+        //public virtual HajurKoCarRentalUser HajurKoCarRentalUser { get; set; }
 
     }
 }
