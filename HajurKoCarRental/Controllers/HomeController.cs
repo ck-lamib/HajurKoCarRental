@@ -34,6 +34,7 @@ public class HomeController : Controller
                                           //join category in _context.DVDCategories on dvd.CategoryNumber equals category.CategoryNumber
                                           select new HomeCar
                                           {
+                                              Id = car.CarId,
                                               CarName = car.CarName,
                                               CarDescription = car.CarDescription,
                                               CarImage = car.CarImage,
@@ -102,6 +103,24 @@ public class HomeController : Controller
     public IActionResult Privacy()
     {
         return View();
+    }
+
+    public IActionResult CarDetailPage(int Id)
+    {
+        var carDetail = _context.Cars.FirstOrDefault(d => d.CarId == Id);
+        //HomeCar homeCar = new HomeCar
+        //{
+        //    CarName = carDetail.CarName,
+        //    CarDescription = carDetail.CarDescription,
+        //    CarImage = carDetail.CarImage,
+        //    CarModel = carDetail.CarModel,
+        //    CarNumber = carDetail.CarNumber,
+        //    isAvailable = carDetail.is_available,
+        //    isRented = false,
+        //    RentPrice = carDetail.RentPrice
+        //};
+
+        return View(carDetail);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

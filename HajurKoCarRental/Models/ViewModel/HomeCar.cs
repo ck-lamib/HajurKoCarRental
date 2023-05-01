@@ -4,6 +4,7 @@ namespace HajurKoCarRental.Models.ViewModel;
 
 public class HomeCar
 {
+    public int Id { get; set; }
     public string? CarName { get; set; }
 
     public string? CarBrand { get; set; }
