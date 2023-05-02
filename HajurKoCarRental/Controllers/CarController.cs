@@ -59,32 +59,12 @@ namespace HajurKoCarRental.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,CarImage,CarName,Model,PricePerHour,IsAvailable")] Car carInfo)
+        public async Task<IActionResult> Create([Bind("CarId,CarName,CarBrand,CarImage,CarModel, CarNumber,RentPrice,CarDescription, is_available")] Car carInfo)
         {
             if (ModelState.IsValid)
             {
-                var file = HttpContext.Request.Form.Files.FirstOrDefault();
 
-                // Check if a file is uploaded
-                if (file != null && file.Length > 0)
-                {
-                    // Generate a unique file name
-                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-
-                    // Set the image file name property
-                    carInfo.CarImage = fileName;
-
-                    // Set the file path to save in wwwroot/images folder
-                    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", fileName);
-
-                    // Save the image file to the specified path
-                    using (var stream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await file.CopyToAsync(stream);
-                    }
-                }
-
-                _context.Add(carInfo);
+                _context.Cars.Add(carInfo);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -115,7 +95,7 @@ namespace HajurKoCarRental.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("id,CarImage,CarName,Model,PricePerHour,IsAvailable")] Car carInfo, IFormFile carImageFile)
+        public async Task<IActionResult> Edit(int id, [Bind("CarId,CarName,CarBrand,CarImage,CarModel, CarNumber,RentPrice,CarDescription, is_available")] Car carInfo)
         {
             if (id != carInfo.CarId)
             {
@@ -129,34 +109,34 @@ namespace HajurKoCarRental.Controllers
                     var existingCar = await _context.Cars.FindAsync(id);
 
                     // Delete the previous image file
-                    if (carImageFile != null && !string.IsNullOrEmpty(existingCar.CarImage))
-                    {
-                        var existingImagePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", existingCar.CarImage);
-                        if (System.IO.File.Exists(existingImagePath))
-                        {
-                            System.IO.File.Delete(existingImagePath);
-                        }
-                    }
+                    //if (carImageFile != null && !string.IsNullOrEmpty(existingCar.CarImage))
+                    //{
+                    //    var existingImagePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", existingCar.CarImage);
+                    //    if (System.IO.File.Exists(existingImagePath))
+                    //    {
+                    //        System.IO.File.Delete(existingImagePath);
+                    //    }
+                    //}
 
                     // Update the car information
                     _context.Entry(existingCar).CurrentValues.SetValues(carInfo);
 
                     // Check if a new image file is uploaded
-                    if (carImageFile != null)
-                    {
-                        // Generate a unique file name for the new image
-                        var uniqueFileName = GetUniqueFileName(carImageFile.FileName);
+                    //if (carImageFile != null)
+                    //{
+                    //    // Generate a unique file name for the new image
+                    //    var uniqueFileName = GetUniqueFileName(carImageFile.FileName);
 
-                        // Save the new image file to the wwwroot/images directory
-                        var imagePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", uniqueFileName);
-                        using (var fileStream = new FileStream(imagePath, FileMode.Create))
-                        {
-                            await carImageFile.CopyToAsync(fileStream);
-                        }
+                    //    // Save the new image file to the wwwroot/images directory
+                    //    var imagePath = Path.Combine(_hostingEnvironment.WebRootPath, "images", uniqueFileName);
+                    //    using (var fileStream = new FileStream(imagePath, FileMode.Create))
+                    //    {
+                    //        await carImageFile.CopyToAsync(fileStream);
+                    //    }
 
-                        // Update the car's image file name
-                        existingCar.CarImage = uniqueFileName;
-                    }
+                    //    // Update the car's image file name
+                    //    existingCar.CarImage = uniqueFileName;
+                    //}
 
                     await _context.SaveChangesAsync();
                 }
@@ -179,14 +159,14 @@ namespace HajurKoCarRental.Controllers
 
 
         // Generate a unique file name for the image
-        private string GetUniqueFileName(string fileName)
-        {
-            fileName = Path.GetFileName(fileName);
-            return Path.GetFileNameWithoutExtension(fileName)
-                + "_"
-                + Guid.NewGuid().ToString().Substring(0, 4)
-                + Path.GetExtension(fileName);
-        }
+        //private string GetUniqueFileName(string fileName)
+        //{
+        //    fileName = Path.GetFileName(fileName);
+        //    return Path.GetFileNameWithoutExtension(fileName)
+        //        + "_"
+        //        + Guid.NewGuid().ToString().Substring(0, 4)
+        //        + Path.GetExtension(fileName);
+        //}
 
 
         // GET: Car/Delete/5

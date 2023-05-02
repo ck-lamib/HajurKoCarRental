@@ -17,9 +17,9 @@ public class HomeCar
 
     public string? CarNumber { get; set; }
 
-    public bool? isAvailable { get; set; }
+    public bool isAvailable { get; set; }
 
-    public bool? isRented { get; set; }
+    public bool isRented { get; set; }
 
     public int? RentPrice { get; set; }
 }

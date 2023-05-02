@@ -12,7 +12,7 @@ public class Car
     [Required(ErrorMessage = "Car name must be entered")]
     public string? CarName { get; set; }
 
-    [Display(Name = "Category Brand")]
+    [Display(Name = "Car Brand")]
     [Required(ErrorMessage = "Car Brand must be entered")]
     public string? CarBrand { get; set; }
 
@@ -38,7 +38,7 @@ public class Car
 
     [Display(Name = "Car Avaibility")]
     [Required(ErrorMessage = "Car's avaibility must be entered")]
-    public bool? is_available { get; set; }
+    public bool is_available { get; set; }
 
     //public ICollection<CarRent> CarRents { get; set; }
 }
