@@ -169,7 +169,7 @@ public class ApplicationDBInitilizer
                     CarName = "Hyundai Tucson",
                     CarBrand = "Hyundai",
                     CarDescription = "A versatile and spacious SUV with modern features.",
-                    CarImage = "hhttps://imgd.aeplcdn.com/664x374/n/cw/ec/106821/new-tucson-exterior-right-front-three-quarter-5.jpeg?isig=0&q=75",
+                    CarImage = "https://imgd.aeplcdn.com/664x374/n/cw/ec/106821/new-tucson-exterior-right-front-three-quarter-5.jpeg?isig=0&q=75",
                     CarModel = "Tucson",
                     CarNumber = "HT7890",
                     RentPrice = 1200,

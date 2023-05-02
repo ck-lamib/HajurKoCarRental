@@ -32,7 +32,7 @@ public class Car
     [Required(ErrorMessage = "Car description must be entered")]
     public string? CarDescription { get; set; }
 
-    [Display(Name = "Car Image")]
+    [Display(Name = "Car Image Path")]
     [Required(ErrorMessage = "Car image must be entered")]
     public string? CarImage { get; set; }
 

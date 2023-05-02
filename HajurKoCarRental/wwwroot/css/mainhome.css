@@ -1591,12 +1591,19 @@ button.mfp-close {
     transition: all 0.4s;
 }
 
-.product-img {
+/*.product-img {
     height: 390px;
     background-image: center center;
     position: relative;
-}
 
+}*/
+.product-img {
+    width: 400px;
+    height: 250px;
+    object-fit: fill;
+    background-image: center center;
+    position: relative;
+}
 /* overlay at start */
 .mfp-fade.mfp-bg {
     opacity: 0;

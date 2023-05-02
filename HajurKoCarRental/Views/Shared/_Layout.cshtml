@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    var section = ViewData["Section"];
+    var title = ViewData["Title"];
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -37,8 +43,96 @@
     @RenderSection("AddCustomStyles", false)
     @*copiedend*@
 </head>
+
+@*
+<header>
+    <!-- Header desktop -->
+    <div class="container-menu-desktop">
+
+        <div class="wrap-menu-desktop">
+            <nav class="limiter-menu-desktop container">
+                <!-- Logo desktop -->
+                <a class="logo " asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="~/images/" class="img-fluid" alt="IMG-LOGO">
+                </a>
+
+
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m">
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a class="btn cl5 size-104 bg6 bor1 hov-btn1 p-lr-15 trans-04 font-weight-bold pt-2" style="letter-spacing:1px;" asp-controller="Admin" asp-action="Index">ADMIN</a>
+                    }
+                    else
+                    {
+                        @if (title!= "Login")
+                        {
+                            <a class="btn cl5 size-104 bg6 bor1 hov-btn1 p-lr-15 trans-04 font-weight-bold" style="letter-spacing:1px;" asp-area="Identity" asp-page="/Account/Login">LOGIN</a>
+                            
+                            <a class="btn cl5 size-104 bg6 bor1 hov-btn1 p-lr-15 trans-04 font-weight-bold" style="letter-spacing:1px; margin-left:10px" asp-area="Identity" asp-page="/Account/Register">RESGISTER</a>
+                        }
+                    }
+
+
+                </div>
+
+
+            </nav>
+        </div>
+    </div>
+</header>*@
+
 <body>
     <header>
+        <!-- Header desktop -->
+        <div class="container-menu-desktop">
+
+            <div class="wrap-menu-desktop">
+                <nav class="limiter-menu-desktop container">
+                    <!-- Logo desktop -->
+                    <a class="logo " asp-area="" asp-controller="Home" asp-action="Index">
+                        <img src="https://media.istockphoto.com/id/1332607862/vector/car-rental-logo-template-design.jpg?s=612x612&w=0&k=20&c=Z7HXnGff9rQIvLWgrYT0E8oge2NMlLg5v0ZB1dCe4zM=" class="img-fluid" alt="IMG-LOGO">
+                    </a>
+
+
+                    <!-- Icon header -->
+                    <div class="wrap-icon-header flex-w flex-r-m">
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a class="btn cl5 size-104 bg6 bor1 hov-btn1 p-lr-15 trans-04 font-weight-bold pt-2" style="letter-spacing:1px;" asp-controller="Admin" asp-action="Index">ADMIN</a>
+                        }
+                        else
+                        {
+                            @if (title != "Login")
+                            {
+                                <a class="btn cl5 size-104 bg6 bor1 hov-btn1 p-lr-15 trans-04 font-weight-bold" style="letter-spacing:1px;" asp-area="Identity" asp-page="/Account/Login">LOGIN</a>
+
+                                <a class="btn cl5 size-104 bg6 bor1 hov-btn1 p-lr-15 trans-04 font-weight-bold" style="letter-spacing:1px; margin-left:10px" asp-area="Identity" asp-page="/Account/Register">RESGISTER</a>
+
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Car" asp-action="Index">Car</a>
+                            }
+                        }
+
+
+                    </div>
+                   @* <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>*@
+
+                </nav>
+            </div>
+        </div>
+    </header>
+    @*<header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">HajurKoCarRental</a>
@@ -59,13 +153,11 @@
                 <partial name="_LoginPartial" />
             </div>
         </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-            @RenderSection("AddCustomScripts", false)
-        </main>
-    </div>
+    </header>*@
+    
+    @RenderBody()
+    @RenderSection("AddCustomScripts", false)
+
 
 @*    <footer class="border-top footer text-muted">
         <div class="container">
